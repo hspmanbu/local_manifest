@@ -8,6 +8,9 @@
 <remove-project name="platform/frameworks/base" />
 <project path="frameworks/base" name="platform_frameworks_base" remote="he" revision="8.0" />
 
+<remove-project name="platform/build" />
+<project path="build" name="platform_build" remote="he" revision="8.0" />         
+
 <remove-project name="platform/frameworks/opt/net/wifi" />
 <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="he" revision="8.0" />
 
