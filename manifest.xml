@@ -24,7 +24,7 @@
 <project path="system/netd" name="platform_system_netd" remote="he" revision="8.0" />
 
 <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="he" revision="master" />
-<project path="device/he/treble" name="device_hesip_treble" remote="he" revision="8.0" />
+<project path="device/hesip/treble" name="device_hesip_treble" remote="he" revision="8.0" />
 
    <!-- Add some SudaMOD packages-->
    <project path="external/suda/SudaSDKs" remote="suda" revision="sm-4.0" name="SudaMod/android_external_suda_SudaSDKs" />
