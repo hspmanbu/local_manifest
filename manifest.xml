@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote name="he" fetch="https://github.com/hspmanbu/" />
+<remote name="suda"
+          fetch="https://github.com"
+          review=".." />
+
+<remove-project name="platform/frameworks/base" />
+<project path="frameworks/base" name="platform_frameworks_base" remote="he" revision="8.0" />
+
+<remove-project name="platform/frameworks/opt/net/wifi" />
+<project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="he" revision="8.0" />
+
+<!-- (boot) Needed to disable dm-verity and adb auth on A/B devices, required for booting -->
+<remove-project name="platform/system/core" />
+<project path="system/core" name="platform_system_core" remote="he" revision="8.0" />
+
+<!-- (device boot) Needed for FBE on f2fs and sdcard. All upstreamed in 8.1 -->
+<remove-project name="platform/system/vold" />
+<project path="system/vold" name="platform_system_vold" remote="he" revision="8.0" />
+
+<!-- Required for tethering on Huawei -->
+<remove-project name="platform/system/netd" />
+<project path="system/netd" name="platform_system_netd" remote="he" revision="8.0" />
+
+<project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="he" revision="master" />
+<project path="device/he/treble" name="device_he_treble" remote="he" revision="8.0" />
+
+   <!-- Add some SudaMOD packages-->
+   <project path="external/suda/SudaSDKs" remote="suda" revision="sm-4.0" name="SudaMod/android_external_suda_SudaSDKs" />
+
+   <remove-project name="platform/packages/apps/Dialer" />
+   <project path="packages/apps/Dialer" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_apps_Dialer" groups="pdk-fs" />
+
+   <project path="packages/providers/PhoneLocationProvider" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_provider_PhoneLocationProvider" />
+   
+   <remove-project name="platform/packages/services/Telecomm" />
+   <project path="packages/services/Telecomm" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />  
+   <remove-project name="platform/packages/services/Telephony" />
+   <project path="packages/services/Telephony" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" />
+   
+   <remove-project name="platform/packages/apps/Contacts" />
+   <project path="packages/apps/Contacts" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_apps_Contacts" groups="pdk-fs" />
+   
+   <!-- END -->
+
+ </manifest>
