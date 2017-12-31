@@ -29,22 +29,5 @@
 <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="he" revision="master" />
 <project path="device/hesip/treble" name="device_hesip_treble" remote="he" revision="8.0" />
 
-   <!-- Add some SudaMOD packages-->
-   <project path="external/suda/SudaSDKs" remote="suda" revision="sm-4.0" name="SudaMod/android_external_suda_SudaSDKs" />
-
-   <remove-project name="platform/packages/apps/Dialer" />
-   <project path="packages/apps/Dialer" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_apps_Dialer" groups="pdk-fs" />
-
-   <project path="packages/providers/PhoneLocationProvider" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_provider_PhoneLocationProvider" />
-   
-   <remove-project name="platform/packages/services/Telecomm" />
-   <project path="packages/services/Telecomm" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />  
-   <remove-project name="platform/packages/services/Telephony" />
-   <project path="packages/services/Telephony" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" />
-   
-   <remove-project name="platform/packages/apps/Contacts" />
-   <project path="packages/apps/Contacts" remote="suda" revision="sm-4.0" name="SudaMod/android_packages_apps_Contacts" groups="pdk-fs" />
-   
-   <!-- END -->
 
  </manifest>
