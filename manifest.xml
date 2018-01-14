@@ -19,6 +19,10 @@
     <linkfile dest="build/tools" src="tools" />
 </project>
 
+<!-- Needed for Huawei HWC -->
+<remove-project name="platform/frameworks/native" />
+<project path="frameworks/native" name="platform_frameworks_native" remote="he" revision="8.0" />
+
 <remove-project name="platform/frameworks/opt/net/wifi" />
 <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="he" revision="8.0" />
 
